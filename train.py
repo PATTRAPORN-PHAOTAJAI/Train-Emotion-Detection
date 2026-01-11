@@ -13,6 +13,9 @@ def main():
         imgsz=64,
         batch=64
     )
+    metrics = model.val()
+    print(metrics.results_dict)
+
 
 if __name__=="__main__":
     main()
