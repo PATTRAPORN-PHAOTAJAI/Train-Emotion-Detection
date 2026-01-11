@@ -29,5 +29,8 @@ def main():
     else:
         print("No checkpoint found to resume from.")
 
+    metrics = model.val()
+    print(metrics.results_dict)
+
 if __name__=="__main__":
     main()
